@@ -34,12 +34,12 @@ Most process documentation is static: a diagram gets drawn once and goes stale t
 
 <table>
   <tr>
-    <td><img src="U Main Screen BPR.png" width="500"></td>
-    <td><img src="U Main Screen BPR.png" width="500"></td>
+    <td><img src="Main Screen BPR.png" width="500"></td>
+    <td><img src="Main Screen BPR.png" width="500"></td>
   </tr>
   <tr>
-    <td><img src="U Main Screen BPR.png" width="500"></td>
-    <td><img src="U Main Screen BPR.png" width="500"></td>
+    <td><img src="Main Screen BPR.png" width="500"></td>
+    <td><img src="Main Screen BPR.png" width="500"></td>
   </tr>
 </table>
 
