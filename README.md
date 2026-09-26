@@ -29,6 +29,20 @@ Most process documentation is static: a diagram gets drawn once and goes stale t
 - **Auto-generated narrative summary** — a DAX-driven card that writes a plain-language comparison ("Compared to As-Is Process: 7 fewer steps; 3.4 fewer hrs end-to-end...") for whichever version is selected
 - **Reusable template architecture** — the Power BI file (model, relationships, measures, visuals) never changes between projects; only the Excel source data does
 
+
+<h3>📷 Project Preview</h3>
+
+<table>
+  <tr>
+    <td><img src="U Main Screen BPR.png" width="500"></td>
+    <td><img src="U Main Screen BPR.png" width="500"></td>
+  </tr>
+  <tr>
+    <td><img src="U Main Screen BPR.png" width="500"></td>
+    <td><img src="U Main Screen BPR.png" width="500"></td>
+  </tr>
+</table>
+
 ## Data Model
 
 Four core tables, plus a small versioning layer:
