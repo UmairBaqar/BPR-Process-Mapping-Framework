@@ -50,11 +50,14 @@ Four core tables, plus a small versioning layer:
 | `Flow_Points` | Derived via Power Query (merge + unpivot) from the above three tables — flattens each flow into plotting-ready start/end coordinates |
 | `VersionTable` | Standalone dimension table distinguishing As-Is / Ideal To-Be / Recommended To-Be |
 
+<br>
 <table>
   <tr>
     <td><img src="BPR Data Model.png" width="1000"></td>
   </tr>
 </table>
+
+<br>
 
 **Design decisions worth noting:**
 - `SequenceFlow` has two logical relationships back to `Process_Steps` (from-step and to-step) — a classic role-playing dimension, resolved via `USERELATIONSHIP()`
