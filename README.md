@@ -35,12 +35,7 @@ Most process documentation is static: a diagram gets drawn once and goes stale t
 <table>
   <tr>
     <td><img src="Main Screen BPR.png" width="500"></td>
-    <td><img src="BPR Data Model.png" width="500"></td>
-  </tr>
-  <tr>
-    <td><img src="Excel Framework.png" width="500"></td>
-    <td><img src="Sequence Flow.png" width="500"></td>
-  </tr>
+    
 </table>
 
 ## Data Model
