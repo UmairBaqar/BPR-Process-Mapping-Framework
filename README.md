@@ -39,7 +39,7 @@ Most process documentation is static: a diagram gets drawn once and goes stale t
   </tr>
   <tr>
     <td><img src="Excel Framework.png" width="500"></td>
-    <td><img src="Measures.png" width="500"></td>
+    <td><img src="Sequence Flow.png" width="500"></td>
   </tr>
 </table>
 
