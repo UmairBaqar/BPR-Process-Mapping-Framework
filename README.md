@@ -52,7 +52,7 @@ Four core tables, plus a small versioning layer:
 
 <table>
   <tr>
-    <td><img src="BPR Data MOdel.png" width="1000"></td>
+    <td><img src="BPR Data Model.png" width="1000"></td>
   </tr>
 </table>
 
