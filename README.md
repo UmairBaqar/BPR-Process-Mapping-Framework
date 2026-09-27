@@ -22,7 +22,7 @@ Most process documentation is static: a diagram gets drawn once and goes stale t
 ## Key Features
 
 - **Swimlane Matrix view** — activity-level process view: who does what, in what order, color- and icon-coded by activity type (Task / Decision / Document / Database)
-- **Flow diagram (Line + Scatter hybrid)** — shows sequence, branching, convergence, and rework loops, with hover tooltips for step name, duration, and branch condition
+- **Flow diagram (Line Chart)** — shows sequence, branching, convergence, and rework loops, with hover tooltips for step name, duration, and branch condition
 - **Real Handoff Count** — a computed metric that identifies genuine cross-role handoffs (lane-crossing transitions), distinct from a simple step count
 - **True Process Duration** — critical-path-based end-to-end duration, correctly treating parallel branches as concurrent rather than additive — a materially more accurate metric than a naive sum of all step durations
 - **Version comparison** — a single slicer flips between As-Is / Ideal To-Be / Recommended To-Be, with every visual and KPI updating automatically
@@ -47,6 +47,14 @@ Most process documentation is static: a diagram gets drawn once and goes stale t
 
 Four core tables, plus a small versioning layer:
 
+<table>
+  <tr>
+    
+    <td><img src="BPR Data Model.png" width="500"></td>
+  </tr>
+  
+</table>
+
 | Table | Purpose |
 |---|---|
 | `Process_Steps` | One row per process step: name, sequence order, owning actor, activity type, estimated duration |
@@ -62,7 +70,7 @@ Four core tables, plus a small versioning layer:
 
 ## Methodology: Why Three Versions, Not an Endless Chain
 
-Early iterations of this project explored an open-ended V1→V2→V3→...→Vn continuous-improvement model (closer to Lean/Kaizen). The project was deliberately scoped back to the three-model BPR structure — As-Is, Ideal To-Be, Recommended To-Be — to stay consistent with classic BPR methodology (Hammer & Champy) rather than blending it with a different improvement philosophy. A Lean/Value-Stream-Mapping layer (value-add classification, wait-time capture, process cycle efficiency) is scoped as a deliberate next tier, not part of this project.
+Early iterations of this project explored an open-ended V1→V2→V3→...→Vn continuous-improvement model (closer to Lean/Kaizen). The project was deliberately scoped back to the three-model BPR structure — As-Is, Ideal To-Be, Recommended To-Be — to stay consistent with classic BPR methodology rather than blending it with a different improvement philosophy. 
 
 ## Reusable Framework
 
@@ -73,6 +81,14 @@ The Power BI file is case-study-agnostic. To document a new process:
 3. In Power BI: Home → Transform Data → Data source settings → Change Source → point at the new file
 4. Refresh — the model, relationships, and every visual recompute automatically
 
+<table>
+  
+  <tr>
+    <td><img src="Excel Framework.png" width="500"></td>
+    <td><img src="Sequence Flow.png" width="500"></td>
+  </tr>
+</table>
+
 This was validated by loading two structurally unrelated processes (an IT service desk incident workflow and a warehouse truck-receiving workflow) into the same, unmodified Power BI file.
 
 **One modeling rule to know when authoring new process data by hand:** a single actor cannot repeat the same step-order position twice (two *different* actors sharing a step-order is fine — that's how parallel branches are represented).
@@ -82,4 +98,4 @@ This was validated by loading two structurally unrelated processes (an IT servic
 - Power BI Desktop (data model, DAX, report visuals)
 - Power Query (M) for data shaping and the version auto-stacking logic
 - Excel (source data authoring, with Data Validation to reduce entry errors)
-
+- Claude Power BI MCP Integration 
