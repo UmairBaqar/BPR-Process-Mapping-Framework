@@ -1,5 +1,5 @@
 # BPR Process Mapping Framework
-### A reusable Power BI + Excel framework for As-Is documentation, Ideal-to-Be redesign, and Recommended-to-Be planning
+### A reusable Power BI + Excel framework for Business Process Re-Engineering that enables Process Mapping for As-Is documentation, Ideal-to-Be redesign, and Recommended-to-Be planning
 
 ## Overview
 
