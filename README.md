@@ -30,11 +30,11 @@ Most process documentation is static: a diagram gets drawn once and goes stale t
 - **Reusable template architecture** — the Power BI file (model, relationships, measures, visuals) never changes between projects; only the Excel source data does
 
 
-<h3>📷 Project Preview</h3>
+<h3>📷 Power BI Report View Preview</h3>
 
 <table>
   <tr>
-    <td><img src="Main Screen BPR.png" width="500"></td>
+    <td><img src="Main Screen BPR.png" width="1000"></td>
     
 </table>
 
@@ -44,10 +44,8 @@ Four core tables, plus a small versioning layer:
 
 <table>
   <tr>
+    <td><img src="BPR Data MOdel.png" width="1000"></td>
     
-    <td><img src="BPR Data Model.png" width="500"></td>
-  </tr>
-  
 </table>
 
 | Table | Purpose |
