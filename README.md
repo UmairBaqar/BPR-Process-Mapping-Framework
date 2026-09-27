@@ -42,12 +42,6 @@ Most process documentation is static: a diagram gets drawn once and goes stale t
 
 Four core tables, plus a small versioning layer:
 
-<table>
-  <tr>
-    <td><img src="BPR Data MOdel.png" width="1000"></td>
-    
-</table>
-
 | Table | Purpose |
 |---|---|
 | `Process_Steps` | One row per process step: name, sequence order, owning actor, activity type, estimated duration |
@@ -55,6 +49,12 @@ Four core tables, plus a small versioning layer:
 | `SequenceFlow` | One row per transition between two steps (the edges connecting the process graph), including branch condition labels |
 | `Flow_Points` | Derived via Power Query (merge + unpivot) from the above three tables — flattens each flow into plotting-ready start/end coordinates |
 | `VersionTable` | Standalone dimension table distinguishing As-Is / Ideal To-Be / Recommended To-Be |
+
+<table>
+  <tr>
+    <td><img src="BPR Data MOdel.png" width="1000"></td>
+  </tr>
+</table>
 
 **Design decisions worth noting:**
 - `SequenceFlow` has two logical relationships back to `Process_Steps` (from-step and to-step) — a classic role-playing dimension, resolved via `USERELATIONSHIP()`
